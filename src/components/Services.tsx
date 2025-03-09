@@ -1,7 +1,6 @@
-import  { useState } from "react";
+import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
-
 
 function Services() {
   const data = [
@@ -42,7 +41,7 @@ function Services() {
   const [isOpen, setIsOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const openModal = (index: number) => {
+  const openModal = (index:any) => {
     setCurrentIndex(index);
     setIsOpen(true);
   };
@@ -60,33 +59,33 @@ function Services() {
   };
 
   return (
-    <div className="container mx-auto p-6">
+    <div className="container mx-auto p-4 sm:p-6">
       {/* Section Header */}
       <div className="text-center">
-        <h1 className="text-2xl text-orange-600 font-semibold">Services</h1>
-        <h1 className="text-5xl my-4 font-bold">What I Do for Clients</h1>
-        <p className="text-gray-500 text-xl my-6">
+        <h1 className="text-lg sm:text-2xl text-orange-600 font-semibold">Services</h1>
+        <h1 className="text-3xl sm:text-5xl my-4 font-bold">What I Do for Clients</h1>
+        <p className="text-gray-500 text-sm sm:text-xl my-4">
           Most common methods for designing websites that work well on desktop
           is responsive and adaptive design.
         </p>
       </div>
 
       {/* Service Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mx-4 my-28">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 mx-2 sm:mx-4 my-12">
         {data.map((item, index) => (
           <div
             key={index}
-            className="flex p-[70px]  gap-6 p-6 rounded-xl shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105 cursor-pointer"
+            className="flex flex-col sm:flex-row p-6 gap-4 sm:gap-6 rounded-xl shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105 cursor-pointer"
             onClick={() => openModal(index)}
           >
             <img
               src={item.picture}
               alt={item.name}
-              className="h-[30ch] w-48 object-cover rounded-lg"
+              className="h-40 sm:h-[30ch] w-full sm:w-48 object-cover rounded-lg"
             />
             <div className="flex flex-col justify-center">
-              <h2 className="text-xl font-semibold">{item.name}</h2>
-              <p className="text-lg font-bold text-indigo-600">{item.price}</p>
+              <h2 className="text-lg sm:text-xl font-semibold">{item.name}</h2>
+              <p className="text-base sm:text-lg font-bold text-indigo-600">{item.price}</p>
               <p className="text-gray-600 text-sm mt-2">{item.description}</p>
             </div>
           </div>
@@ -95,50 +94,47 @@ function Services() {
 
       {/* Modal for Image Slider */}
       <Dialog
-  open={isOpen}
-  onClose={closeModal}
-  className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-60"
->
-  <div className="relative bg-white p-6 rounded-lg w-full h-full max-w-none flex flex-col">
-    <button
-      className="absolute top-3 right-3 text-gray-700 hover:text-red-500"
-      onClick={closeModal}
-    >
-      <X size={24} />
-    </button>
-    
-    <div className="flex flex-col lg:flex-row w-full h-full">
-      {/* Image Section */}
-      <div className="relative flex-1 flex justify-center items-center p-7">
-        <img
-          src={data[currentIndex].picture}
-          className="h-[80vh] object-cover rounded-lg"
-          alt="Preview"
-        />
-        <button
-          className="absolute top-1/2 left-3 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md"
-          onClick={prevImage}
-        >
-          <ChevronLeft size={24} />
-        </button>
-        <button
-          className="absolute top-1/2 right-3 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md"
-          onClick={nextImage}
-        >
-          <ChevronRight size={24} />
-        </button>
-      </div>
+        open={isOpen}
+        onClose={closeModal}
+        className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-60"
+      >
+        <div className="relative bg-white p-4 sm:p-6 rounded-lg w-full sm:max-w-3xl flex flex-col sm:flex-row">
+          <button
+            className="absolute top-2 right-2 sm:top-3 sm:right-3 text-gray-700 hover:text-red-500"
+            onClick={closeModal}
+          >
+            <X size={24} />
+          </button>
 
-      {/* Info Section */}
-      <div className="flex flex-col justify-center p-10 bg-gray-100 w-full lg:w-[400px]">
-        <h2 className="text-3xl font-semibold">{data[currentIndex].name}</h2>
-        <p className="text-2xl font-bold text-indigo-600 py-4">{data[currentIndex].price}</p>
-        <p className="text-gray-600 text-[16px] mt-2">{data[currentIndex].description}</p>
-      </div>
-    </div>
-  </div>
-</Dialog>
+          {/* Image Section */}
+          <div className="relative flex justify-center items-center p-4 sm:p-7 w-full sm:w-1/2">
+            <img
+              src={data[currentIndex].picture}
+              className="w-full max-h-[50vh] sm:max-h-[80vh] object-cover rounded-lg"
+              alt="Preview"
+            />
+            <button
+              className="absolute top-1/2 left-3 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md"
+              onClick={prevImage}
+            >
+              <ChevronLeft size={24} />
+            </button>
+            <button
+              className="absolute top-1/2 right-3 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md"
+              onClick={nextImage}
+            >
+              <ChevronRight size={24} />
+            </button>
+          </div>
 
+          {/* Info Section */}
+          <div className="flex flex-col justify-center p-4 sm:p-10 bg-gray-100 w-full sm:w-1/2">
+            <h2 className="text-xl sm:text-3xl font-semibold">{data[currentIndex].name}</h2>
+            <p className="text-lg sm:text-2xl font-bold text-indigo-600 py-2 sm:py-4">{data[currentIndex].price}</p>
+            <p className="text-gray-600 text-sm sm:text-base mt-2">{data[currentIndex].description}</p>
+          </div>
+        </div>
+      </Dialog>
     </div>
   );
 }

@@ -13,28 +13,28 @@ function PortfolioAmazingWork() {
   };
   return (
     <div>
-      <div className="text-center ">
-        <h1 className="text-2xl text-orange-600">Portfolio</h1>
-        <h1 className="text-5xl my-4">My Amazing Works</h1>
-        <h1 className="text-gray-500 text-xl my-10">
-          Most common methods for designing websites that work well on desktop
-          is <br />
-          responsive and adaptive design
-        </h1>
-      </div>
-      <div className="flex justify-around mx-[20%] text-xl my-20">
-        {filteringData.map((item) => {
-          return (
-            <h1
-              key={item}
-              className="cursor-pointer"
-              onClick={() => handleFilteration(item)}
-            >
-              {item}
-            </h1>
-          );
-        })}
-      </div>
+     <div className="text-center px-4">
+  <h1 className="text-xl sm:text-2xl text-orange-600">Portfolio</h1>
+  <h1 className="text-3xl sm:text-5xl my-4">My Amazing Works</h1>
+  <h1 className="text-gray-500 text-base sm:text-xl my-6 sm:my-10">
+    Most common methods for designing websites that work well on desktop
+    is <br className="hidden sm:block" />
+    responsive and adaptive design
+  </h1>
+</div>
+
+<div className="flex flex-wrap justify-center gap-4 mx-4 sm:mx-[20%] text-lg sm:text-xl my-10 sm:my-20">
+  {filteringData.map((item) => (
+    <h1
+      key={item}
+      className="cursor-pointer px-4 py-2 rounded-lg hover:bg-gray-300 transition"
+      onClick={() => handleFilteration(item)}
+    >
+      {item}
+    </h1>
+  ))}
+</div>
+
       <div className="lg:grid lg:grid-cols-3 lg:gap-4  grid-rows-2 mx-[5%] sm:flex sm:flex-col sm:gap-4">
         <div className="rounded-[5%] lg:h-[70vh]   bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center text-white font-bold lg:my-[0vh] md:my-[5vh] ">
           <img

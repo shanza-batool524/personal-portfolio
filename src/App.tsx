@@ -67,10 +67,11 @@ function App() {
               </div>
             </div>
 
-            <div className="pt-[10%]">
+            
+          </div>
+          <div className="pt-[10%]">
               <SecondSection />
             </div>
-          </div>
           <div className="mt-[45%]">
             <ThirdSection
               mainButton={tailwindCss.mainButton}

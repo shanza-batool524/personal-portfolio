@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
-
-const Preloader = ({ setLoading }) => {
+type Props ={
+  setLoading :any
+}
+const Preloader = ({ setLoading }:Props) => {
   return (
     <motion.div
       className="fixed inset-0 flex items-center justify-center bg-black"

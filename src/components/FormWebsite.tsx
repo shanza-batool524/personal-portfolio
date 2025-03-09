@@ -18,11 +18,11 @@ const FormWebsite = ({ mainButton, buttonSpan }: Props) => {
     NewMessage: "",
   });
 
-  const onchanging = (e) => {
+  const onchanging = (e:any) => {
     setData({ ...data, [e.target.name]: e.target.value });
   };
 
-  const submitButton = (e) => {
+  const submitButton = (e:any) => {
     e.preventDefault();
 
     emailjs

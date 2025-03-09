@@ -1,14 +1,16 @@
 import { useRef, useEffect } from "react";
-import LoadingBar from "react-top-loading-bar";
+import LoadingBar, { LoadingBarRef } from "react-top-loading-bar";
 
 const AnimatedLoadingBar = () => {
-  const ref = useRef(null);
+  const ref = useRef<LoadingBarRef | null>(null); // Ensure proper typing
 
   useEffect(() => {
-    ref.current.continuousStart();
-    setTimeout(() => {
-      ref.current.setProgress(0); // Smooth transition to 80%
-    }, 0);
+    if (ref.current) {
+      ref.current.continuousStart();
+      setTimeout(() => {
+        if (ref.current) ref.current.complete(); // Complete instead of resetting
+      }, 2000); // Adjust timing based on your needs
+    }
   }, []);
 
   return <LoadingBar color="orange" ref={ref} height={3} />;

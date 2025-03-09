@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import Preloader from "./Preloader/Preloader";
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
 import SecondSection from "./components/SecondSection";
@@ -14,7 +13,7 @@ import Blogs from "./components/Blogs";
 import EmailSending from "./components/EmailSending";
 import FormWebsite from "./components/FormWebsite";
 import GoogleMapComponent from "./components/GoogleMap";
-
+import Preloader from "./preloader/Preloader";
 function App() {
   const [loading, setLoading] = useState(true);
   const [isScrolling, setIsScrolling] = useState(false);

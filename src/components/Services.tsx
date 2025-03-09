@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 

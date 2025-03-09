@@ -1,4 +1,3 @@
-import React from "react";
 import { FaTwitter, FaFacebookSquare, FaFigma } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { TbBrandBinance } from "react-icons/tb";

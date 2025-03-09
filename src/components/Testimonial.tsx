@@ -1,36 +1,34 @@
-import { useState } from "react";
-import { motion } from "framer-motion"; // Import Framer Motion
 
 const Testimonial = () => {
-  const [slider, setSlider] = useState(0); // Start from index 0
+  // const [slider, setSlider] = useState<Number>(0); 
 
-  const data = [
-    {
-      description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non rerum dolorum sed quaerat veniam perferendis corrupti omnis eum iusto, provident facere saepe maiores, voluptas cupiditate perspiciatis esse cum, minima asperiores!",
-      image: "ajooba.jpeg",
-      name: "Mike Anderson",
-      studio: "Vivaco Studio",
-    },
-    {
-      description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non rerum dolorum sed quaerat veniam perferendis corrupti omnis eum iusto, provident facere saepe maiores, voluptas cupiditate perspiciatis esse cum, minima asperiores!",
-      image: "ajooba.jpeg",
-      name: "James Wills",
-      studio: "Vivaco Studio",
-    },
-    {
-      description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non rerum dolorum sed quaerat veniam perferendis corrupti omnis eum iusto, provident facere saepe maiores, voluptas cupiditate perspiciatis esse cum, minima asperiores!",
-      image: "ajooba.jpeg",
-      name: "Tonny Kakkar",
-      studio: "Vivaco Studio",
-    },
-  ];
+  // const data:Data[] = [
+  //   {
+  //     description:
+  //       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non rerum dolorum sed quaerat veniam perferendis corrupti omnis eum iusto, provident facere saepe maiores, voluptas cupiditate perspiciatis esse cum, minima asperiores!",
+  //     image: "ajooba.jpeg",
+  //     name: "Mike Anderson",
+  //     studio: "Vivaco Studio",
+  //   },
+  //   {
+  //     description:
+  //       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non rerum dolorum sed quaerat veniam perferendis corrupti omnis eum iusto, provident facere saepe maiores, voluptas cupiditate perspiciatis esse cum, minima asperiores!",
+  //     image: "ajooba.jpeg",
+  //     name: "James Wills",
+  //     studio: "Vivaco Studio",
+  //   },
+  //   {
+  //     description:
+  //       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non rerum dolorum sed quaerat veniam perferendis corrupti omnis eum iusto, provident facere saepe maiores, voluptas cupiditate perspiciatis esse cum, minima asperiores!",
+  //     image: "ajooba.jpeg",
+  //     name: "Tonny Kakkar",
+  //     studio: "Vivaco Studio",
+  //   },
+  // ];
 
-  // Handle slider functionality
-  const goNext = () => setSlider((prev) => (prev + 1) % data.length);
-  const goPrev = () => setSlider((prev) => (prev - 1 + data.length) % data.length);
+  // // Handle slider functionality
+  // const goNext = () => setSlider((prev) => (prev + 1) % data.length);
+  // const goPrev = () => setSlider((prev) => (prev - 1 + data.length) % data.length);
 
   return (
     <div className="relative">

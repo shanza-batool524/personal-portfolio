@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.slick-dots li.slick-active div {
+    border: 3px solid #612f0b; /* Tailwind orange-500 */
+    padding: 2px; /* Adjust ring thickness */
+  }
+  

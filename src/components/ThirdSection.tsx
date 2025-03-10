@@ -30,7 +30,7 @@ function ThirdSection({ mainButton, buttonSpan }: Props) {
 
         {/* Floating Stats - Years of Success */}
         <motion.div
-          className="absolute top-[30%] left-[10%] md:left-[20%] lg:left-[-1%]"
+          className="absolute top-[30%]  md:left-[20%] lg:left-[-1%]"
         >
           <div className="ml-[50%] items-center justify-center gap-4 bg-white p-4 w-40 md:w-48 lg:w-22 h-24 rounded-xl shadow-lg hidden md:block">
             <div className="text-4xl md:text-5xl text-green-600">3</div>

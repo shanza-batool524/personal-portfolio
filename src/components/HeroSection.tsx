@@ -53,34 +53,36 @@ function HeroSection({ mainButton, buttonSpan }: Props) {
 
       <div className="relative flex-1 max-w-xs  lg:w-[120%] sm:max-w-sm md:max-w-md  flex justify-center  lg:h-[60vh]  ">
         <img
-          className="w-full max-w-[280px] sm:max-w-[320px] md:max-w-[100vw] h-[100%]"
+          className="  sm:max-w-[320px] md:max-w-[100vw] h-[100%]"
           src="/kainatt.png"
           alt="Kainat Batool"
         />
 
         {/* Floating Icons */}
         <motion.div
-          className="absolute top-0 left-16 md:left-20 bg-[#fff4f4] w-14 h-14 rounded-xl flex justify-center items-center"
+          className="absolute top-0 left-16 md:left-20 bg-[#fff4f4]  rounded-xl  justify-center items-center hidden md:block p-2"
           animate={{ y: [0, -10, 0] }}
           transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
         >
-          {/* <h1 className="text-[#015296] text-3xl font-bold"> */}
           <img src="/flutter.png" alt="" className="w-8 h-8 inline-block" />
           {/* </h1> */}
         </motion.div>
 
         <motion.div
-          className="absolute top-1/3 right-10 md:right-16 bg-[#741937] w-14 h-14 rounded-xl flex justify-center items-center"
+          className="absolute top-1/3 right-10 md:right-17 bg-[#741937]  rounded-xl flex  justify-center items-center  md:block p-2"
           animate={{ y: [0, -10, 0] }}
           transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
         >
+          <div className="flex justify-center items-center">
+          <img src="/firebase.png" alt="" className="w-8 h-8 inline-block " />
+
+          </div>
           {/* <FaFigma className="text-2xl text-blue-500" /> */}
-          <img src="/firebase.png" alt="" className="w-8 h-8 inline-block" />
 
         </motion.div>
 
         <motion.div
-          className="absolute bottom-2 left-1/2 transform -translate-x-1/2 bg-black w-14 h-14 rounded-xl flex justify-center items-center"
+          className="absolute bottom-2 left-1/2 transform -translate-x-1/2 bg-black  rounded-xl  justify-center items-center hidden md:block p-2"
           animate={{ y: [0, -20, 0] }}
           transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
         >

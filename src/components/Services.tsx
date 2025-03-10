@@ -6,42 +6,42 @@ function Services() {
   const data = [
     {
       picture:
-        "https://external-preview.redd.it/nNffPZTG2BVD2nsLU6Ra3PPvrsWw-6JDvckTd9Mj_jA.jpg?auto=webp&s=b36d93a15d52460ede3b35c475fe87f97f601409",
-      name: "Creative Design",
-      price: "$99",
+        "/mockup/2.png",
+      name: "Native App",
+      price: "$800",
       description:
-        "We create innovative, effective websites that capture your brand, improve conversions, and maximize revenue.",
+        "A user-friendly e-commerce app designed to provide a seamless online shopping experience. The app allows users to effortlessly browse, search, and purchase products while ensuring secure payment integration for a smooth checkout process. ",
     },
     {
       picture:
-        "https://preview.redd.it/my-first-attempt-at-customization-v0-5g0kwhnyikea1.jpg?width=1080&crop=smart&auto=webp&s=c39f01c981839b733af9b54f8546faea8b20d476",
-      name: "Modern Web Development",
+        "/mockup/5.png",
+      name: "Learning Management System",
       price: "$149",
       description:
-        "We build responsive and high-performance websites that drive engagement and sales.",
+        "A versatile LMS application designed to streamline learning and collaboration. It supports structured course management for different semesters, enabling students and teachers to manage assignments efficiently with submission and tracking features. ",
     },
     {
       picture:
-        "https://preview.redd.it/my-first-attempt-at-customization-v0-5g0kwhnyikea1.jpg?width=1080&crop=smart&auto=webp&s=c39f01c981839b733af9b54f8546faea8b20d476",
-      name: "UI/UX Optimization",
+        "/mockup/7.png",
+      name: "Bina'a App",
       price: "$79",
       description:
-        "Enhance user experience with smooth, intuitive, and accessible web design solutions.",
+        "A smart home management app designed to simplify household maintenance and service bookings. Whether it's a blocked drain, electrical issues, or the need for a plumber, painter, or electrician, users can find and book professional service providers directly through the app. ",
     },
     {
       picture:
-        "https://preview.redd.it/my-first-attempt-at-customization-v0-5g0kwhnyikea1.jpg?width=1080&crop=smart&auto=webp&s=c39f01c981839b733af9b54f8546faea8b20d476",
-      name: "Brand Identity",
+        "/mockup/11.png",
+      name: "Attendance App",
       price: "$129",
       description:
-        "We help build a strong digital identity with engaging branding and visuals.",
+        "A comprehensive attendance tracking system designed for efficient workforce management. The app features three types of admins with varying access levels, allowing them to monitor and edit attendance records as needed. It enables project-based workforce planning, helping users determine the required number of employees for specific tasks, such as road construction. ",
     },
   ];
 
   const [isOpen, setIsOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const openModal = (index:any) => {
+  const openModal = (index: any) => {
     setCurrentIndex(index);
     setIsOpen(true);
   };
@@ -65,8 +65,7 @@ function Services() {
         <h1 className="text-lg sm:text-2xl text-orange-600 font-semibold">Services</h1>
         <h1 className="text-3xl sm:text-5xl my-4 font-bold">What I Do for Clients</h1>
         <p className="text-gray-500 text-sm sm:text-xl my-4">
-          Most common methods for designing websites that work well on desktop
-          is responsive and adaptive design.
+          I design and develop high-performance mobile apps with seamless functionality, intuitive UI/UX, and scalable solutions tailored to client needs.
         </p>
       </div>
 
@@ -108,11 +107,11 @@ function Services() {
 
           {/* Image Section */}
           <div className="relative flex justify-center items-center p-4 sm:p-7 w-full sm:w-1/2">
-            <img
+            {/* <img
               src={data[currentIndex].picture}
               className="w-full max-h-[50vh] sm:max-h-[80vh] object-cover rounded-lg"
               alt="Preview"
-            />
+            /> */}
             <button
               className="absolute top-1/2 left-3 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md"
               onClick={prevImage}

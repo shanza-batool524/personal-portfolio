@@ -5,19 +5,19 @@ function SecondSection() {
       title: "Efficient Code",
       description:
         "Writing clean, scalable, and optimized code for high-performance applications.",
-      image: "1st.JPG",
+      image: "/1.png",
     },
     {
-      title: "High Quality",
+      title: "Seamless User Experience",
       description:
-        "Most common methods for designing websites that work well on desktop is responsive and adaptive design.",
-      image: "1st.JPG",
+        "Building intuitive and user-friendly mobile apps with smooth navigation.",
+      image: "/2.png",
     },
     {
-      title: "Awesome Idea",
+      title: "Innovative Solutions",
       description:
-        "Most common methods for designing websites that work well on desktop is responsive and adaptive design.",
-      image: "1st.JPG",
+        "Transforming ideas into powerful applications with cutting-edge technology.",
+      image: "/3.png",
     },
   ];
 

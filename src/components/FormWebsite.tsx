@@ -55,7 +55,7 @@ const FormWebsite = ({ mainButton, buttonSpan }: Props) => {
             </div>
             <div>
               <h1 className="text-3xl">Address</h1>
-              <p className="text-gray-500 text-sm">20, Somewhere in world</p>
+              <p className="text-gray-500 text-sm">Chaklala Scheme 3, Rawalpindi Punjab</p>
             </div>
           </div>
           <div className="flex gap-5 items-center">
@@ -73,7 +73,7 @@ const FormWebsite = ({ mainButton, buttonSpan }: Props) => {
             </div>
             <div>
               <h1 className="text-3xl">Phone</h1>
-              <p className="text-gray-500 text-sm">0342-5534689</p>
+              <p className="text-gray-500 text-sm">0335-0655554</p>
             </div>
           </div>
         </div>

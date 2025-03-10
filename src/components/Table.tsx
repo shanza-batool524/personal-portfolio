@@ -5,10 +5,10 @@ function GridTable() {
     { name: "/gridImages/2.png" },
     { name: "/gridImages/3.png" },
     { name: "/gridImages/4.png" },
-    { name: "/gridImages/5.png" },
-    { name: "/gridImages/6.png" },
-    { name: "/gridImages/7.png" },
-    { name: "/gridImages/8.png" },
+    // { name: "/gridImages/5.png" },
+    // { name: "/gridImages/6.png" },
+    // { name: "/gridImages/7.png" },
+    // { name: "/gridImages/8.png" },
   ];
 
   return (

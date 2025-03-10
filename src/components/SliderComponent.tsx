@@ -14,23 +14,23 @@ const SimpleSlider = () => {
   const data: SlideData[] = [
     {
       description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non rerum dolorum sed quaerat veniam perferendis corrupti omnis eum iusto, provident facere saepe maiores, voluptas cupiditate perspiciatis esse cum, minima asperiores!",
-      image: "/ajooba.jpeg",
-      name: "Mike Anderson",
-      studio: "Vivaco Studio",
+        "Working with Kainat Batool has been a game-changer for our brand! The content strategy, design, and engagement have significantly boosted our online presence. Highly professional and creative—couldn’t ask for better social media management",
+      image: "/profile.jpg",
+      name: "Imran Khan",
+      studio: "Tarash Furnitures",
     },
     {
       description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non rerum dolorum sed quaerat veniam perferendis corrupti omnis eum iusto, provident facere saepe maiores, voluptas cupiditate perspiciatis esse cum, minima asperiores!",
-      image: "/ajooba.jpeg",
-      name: "James Wills",
-      studio: "Vivaco Studio",
+      "Absolutely impressed with the website Kainat built for us! It’s fast, visually stunning, and easy to navigate. The attention to detail and responsiveness exceeded our expectations. Highly recommended!",
+      image: "/profile.jpg",
+      name: "Syed Fawad",
+      studio: "Furniture Liquidators",
     },
     {
       description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non rerum dolorum sed quaerat veniam perferendis corrupti omnis eum iusto, provident facere saepe maiores, voluptas cupiditate perspiciatis esse cum, minima asperiores!",
-      image: "/ajooba.jpeg",
-      name: "Tonny Kakkar",
+      "From idea to execution, Kainat delivered an outstanding mobile app that perfectly fits our needs. The UI/UX is seamless, and the performance is top-notch. Truly a skilled and reliable developer",
+      image: "/profile.jpg",
+      name: "Hamza Hanif",
       studio: "Vivaco Studio",
     },
   ];

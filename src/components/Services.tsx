@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Description, Dialog } from "@headlessui/react";
+import {  Dialog } from "@headlessui/react";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 
 function Services() {

@@ -43,7 +43,10 @@ function App() {
   return (
     <>
       {loading ? (
+        <div className="bg-black">
         <Preloader setLoading={setLoading} />
+
+        </div>
       ) : (
         <>
           <div className="h-screen bg-no-repeat bg-cover  ">

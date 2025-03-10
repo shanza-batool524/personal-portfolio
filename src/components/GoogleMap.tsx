@@ -7,7 +7,7 @@ interface GoogleMapProps {
   zoom?: number;
 }
 
-function GoogleMap({ center = [51.505, -0.09], zoom = 13 }: GoogleMapProps) {
+function GoogleMap({ center = [33.586350, 73.088117], zoom = 13 }: GoogleMapProps) { // ✅ Updated coordinates
   return (
     <div className="w-full h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px] mx-auto max-w-8xl px-4 my-11">
       <MapContainer
@@ -21,7 +21,7 @@ function GoogleMap({ center = [51.505, -0.09], zoom = 13 }: GoogleMapProps) {
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
         <Marker position={center}>
-          <Popup>A pretty CSS3 popup. <br /> Easily customizable.</Popup>
+          <Popup>Ayub Colony No. 3, Chaklala Scheme 3, Rawalpindi</Popup>
         </Marker>
       </MapContainer>
     </div>
@@ -29,4 +29,3 @@ function GoogleMap({ center = [51.505, -0.09], zoom = 13 }: GoogleMapProps) {
 }
 
 export default GoogleMap;
-

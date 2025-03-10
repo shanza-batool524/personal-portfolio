@@ -2,9 +2,9 @@
 function SecondSection() {
   const mapping = [
     {
-      title: "Pixel Perfect",
+      title: "Efficient Code",
       description:
-        "Most common methods for designing websites that work well on desktop is responsive and adaptive design.",
+        "Writing clean, scalable, and optimized code for high-performance applications.",
       image: "1st.JPG",
     },
     {

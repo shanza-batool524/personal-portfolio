@@ -27,10 +27,10 @@ const FormWebsite = ({ mainButton, buttonSpan }: Props) => {
 
     emailjs
       .send(
-        "service_9hakcca", // Your EmailJS Service ID
-        "template_qkx1dsl", // Your EmailJS Template ID
+        "service_2s9onvd", // Your EmailJS Service ID
+        "template_u7gnvus", // Your EmailJS Template ID
         data,
-        "hBzJTnXBmIO9kpYNY" // Your EmailJS Public Key
+        "BDDcEaxnFE1MlZy8d" // Your EmailJS Public Key
       )
       .then(() => {
         alert("Email sent successfully!");
@@ -64,7 +64,7 @@ const FormWebsite = ({ mainButton, buttonSpan }: Props) => {
             </div>
             <div>
               <h1 className="text-3xl">Email</h1>
-              <p className="text-gray-500 text-sm">Syedaliabdullahshah5@gmail.com</p>
+              <p className="text-gray-500 text-sm">kainatbatool009@gmail.com</p>
             </div>
           </div>
           <div className="flex gap-5 items-center">

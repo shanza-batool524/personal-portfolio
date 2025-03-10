@@ -12,7 +12,7 @@ function ThirdSection({ mainButton, buttonSpan }: Props) {
       <div className="relative w-full lg:w-1/2 flex justify-center">
         <img
           className="w-full max-w-sm md:max-w-md lg:max-w-lg h-auto rounded-xl"
-          src="https://dizme-vue.vercel.app/img/about/1.jpg"
+          src="conference.png"
           alt="James Smith"
         />
 
@@ -21,17 +21,17 @@ function ThirdSection({ mainButton, buttonSpan }: Props) {
           className="absolute bottom-2 left-[50%] md:left-[60%] transform -translate-x-1/2"
         >
           <div className="flex items-center justify-center gap-4 bg-white p-4 w-40 md:w-48 lg:w-56 h-24 rounded-xl shadow-lg">
-            <div className="text-4xl md:text-5xl text-purple-600">9K</div>
+            <div className="text-4xl md:text-5xl text-purple-600">8+</div>
             <div className="text-lg md:text-xl">Total Projects</div>
           </div>
         </motion.div>
 
         {/* Floating Stats - Years of Success */}
         <motion.div
-          className="absolute top-[30%] left-[10%] md:left-[20%] lg:left-[5%]"
+          className="absolute top-[30%] left-[10%] md:left-[20%] lg:left-[-1%]"
         >
-          <div className="flex items-center justify-center gap-4 bg-white p-4 w-40 md:w-48 lg:w-56 h-24 rounded-xl shadow-lg">
-            <div className="text-4xl md:text-5xl text-green-600">18</div>
+          <div className="flex items-center justify-center gap-4 bg-white p-4 w-40 md:w-48 lg:w-22 h-24 rounded-xl shadow-lg">
+            <div className="text-4xl md:text-5xl text-green-600">3</div>
             <div className="text-lg md:text-xl">Years of Success</div>
           </div>
         </motion.div>
@@ -39,15 +39,12 @@ function ThirdSection({ mainButton, buttonSpan }: Props) {
 
       {/* Right Side - Text Content */}
       <div className="w-full lg:w-1/2 mt-10 lg:mt-0 text-center lg:text-left">
-        <div className="text-orange-600 text-2xl md:text-3xl">I'm a Designer</div>
+        <div className="text-orange-600 text-2xl md:text-3xl">Crafting Code with Precision</div>
         <div className="py-4 text-3xl md:text-4xl lg:text-5xl font-bold">
-          I Can Design Anything You Want
+        Building Digital Experiences That Matter
         </div>
         <div className="text-base md:text-lg text-gray-500 mt-4">
-          Hello there! I'm a web designer, and I'm very passionate and dedicated to my work.
-          With 20 years of experience as a professional web developer, I have acquired
-          the skills and knowledge necessary to make your project a success.
-          I enjoy every step of the design process, from discussion to collaboration.
+        I'm a passionate developer who loves bringing ideas to life through clean, efficient, and innovative code. Whether it's crafting seamless mobile applications or building powerful digital solutions, I can develop anything you envision. Let's turn your ideas into reality!
         </div>
 
         {/* Button Section */}
@@ -55,7 +52,7 @@ function ThirdSection({ mainButton, buttonSpan }: Props) {
           <button className={mainButton}>
             <span className={buttonSpan}></span>
             <span className="relative z-10 group-hover:text-white duration-75">
-              Download CV
+             View Services
             </span>
           </button>
         </div>

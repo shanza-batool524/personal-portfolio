@@ -18,7 +18,13 @@ function Navbar({ mainButton, buttonSpan, isScrolling }: Props) {
     >
       <div className="w-full py-4 flex justify-between items-center">
         {/* Logo */}
-        <div className="text-xl font-bold">Logo</div>
+        <div className="text-xl font-bold">
+  <a href="/">
+    <img src="/logo.png" alt="Logo" className="h-20 w-auto cursor-pointer" />
+  </a>
+</div>
+
+
 
         {/* Desktop Menu */}
         <div className="hidden lg:flex gap-8 items-center text-lg">
@@ -27,12 +33,18 @@ function Navbar({ mainButton, buttonSpan, isScrolling }: Props) {
           <a href="#" className="hover:text-orange-500 transition">Portfolio</a>
           <a href="#" className="hover:text-orange-500 transition">Service</a>
           <a href="#" className="hover:text-orange-500 transition">Contact</a>
-          <button className={mainButton}>
+          {/* <button className={mainButton}>
             <span className={buttonSpan}></span>
             <span className="relative z-10 group-hover:text-white duration-75">
               Download CV
             </span>
-          </button>
+          </button> */}
+          <a href="/public/kainat.pdf" download="kainat.pdf" className={mainButton}>
+            <span className={buttonSpan}></span>
+            <span className="relative z-10 group-hover:text-white duration-75">
+              Download CV
+            </span>
+          </a>
         </div>
 
         {/* Mobile Menu Button */}

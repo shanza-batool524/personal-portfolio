@@ -9,8 +9,8 @@ import Services from "./components/Services";
 import Testimonial from "./components/Testimonial";
 import SimpleSlider from "./components/SliderComponent";
 import GridTable from "./components/Table";
-import Blogs from "./components/Blogs";
-import EmailSending from "./components/EmailSending";
+// import Blogs from "./components/Blogs";
+// import EmailSending from "./components/EmailSending";
 import FormWebsite from "./components/FormWebsite";
 import GoogleMapComponent from "./components/GoogleMap";
 import Preloader from "./preloader/Preloader";
@@ -72,7 +72,7 @@ function App() {
           <div className="pt-[10%]">
               <SecondSection />
             </div>
-          <div className="mt-[45%]">
+          <div className="mt-[10%]">
             <ThirdSection
               mainButton={tailwindCss.mainButton}
               buttonSpan={tailwindCss.buttonSpan}
@@ -87,12 +87,12 @@ function App() {
           <SimpleSlider />
           <div className="my-14">
             <GridTable />
-            <div className="my-[30vh]">
-              <Blogs />
+            <div className="my-[3vh]">
+              {/* <Blogs /> */}
             </div>
-            <EmailSending />
+            {/* <EmailSending /> */}
           </div>
-          <div className="my-[25vh] ">
+          <div className="my-[5vh] ">
             <FormWebsite
               mainButton={tailwindCss.mainButton}
               buttonSpan={tailwindCss.buttonSpan}

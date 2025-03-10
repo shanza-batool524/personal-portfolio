@@ -1,29 +1,31 @@
 
 function PortfolioAmazingWork() {
-  const filteringData = [
-    "All",
-    "Youtube",
-    "Vimeo",
-    "SoundCloud",
-    "Popup",
-    "Detail",
-  ];
-  const handleFilteration = (item: string) => {
-    console.log(item);
-  };
+  // const filteringData = [
+  //   "All",
+  //   "Youtube",
+  //   "Vimeo",
+  //   "SoundCloud",
+  //   "Popup",
+  //   "Detail",
+  // ];
+  // const handleFilteration = (item: string) => {
+  //   console.log(item);
+  // };
   return (
     <div>
      <div className="text-center px-4">
   <h1 className="text-xl sm:text-2xl text-orange-600">Portfolio</h1>
-  <h1 className="text-3xl sm:text-5xl my-4">My Amazing Works</h1>
+  <h1 className="text-3xl sm:text-5xl my-4">Bringing Ideas to Life</h1>
   <h1 className="text-gray-500 text-base sm:text-xl my-6 sm:my-10">
-    Most common methods for designing websites that work well on desktop
-    is <br className="hidden sm:block" />
-    responsive and adaptive design
-  </h1>
+  From Creative Designs to Stunning Websites & 
+  Apps <br className="hidden sm:block" />
+     Showcasing a diverse portfolio of visually appealing designs, responsive websites, and user-friendly mobile 
+     Apps <br className="hidden sm:block" />
+
+     crafted with precision, creativity, and innovation.  </h1>
 </div>
 
-<div className="flex flex-wrap justify-center gap-4 mx-4 sm:mx-[20%] text-lg sm:text-xl my-10 sm:my-20">
+{/* <div className="flex flex-wrap justify-center gap-4 mx-4 sm:mx-[20%] text-lg sm:text-xl my-10 sm:my-20">
   {filteringData.map((item) => (
     <h1
       key={item}
@@ -33,49 +35,60 @@ function PortfolioAmazingWork() {
       {item}
     </h1>
   ))}
-</div>
+</div> */}
 
       <div className="lg:grid lg:grid-cols-3 lg:gap-4  grid-rows-2 mx-[5%] sm:flex sm:flex-col sm:gap-4">
-        <div className="rounded-[5%] lg:h-[70vh]   bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center text-white font-bold lg:my-[0vh] md:my-[5vh] ">
+        <div className="rounded-[5%] lg:h-[70vh]   bg-white flex items-center justify-center text-white font-bold lg:my-[0vh] md:my-[5vh] ">
           <img
-            src="https://png.pngtree.com/png-clipart/20230313/original/pngtree-beautifull-the-nature-red-rose-flower-with-green-leaf-png-image_8986814.png"
+            src="/hikenexus.jpg"
             alt=""
-            className="p-20 hover:p-[60px] duration-500  sm:h-[50vh]"
+            className="w-full h-full object-cover rounded-[5%] duration-500 p-34 hover:p-[20px]"
+            // className="p-20 hover:p-[60px] duration-500  sm:h-[50vh]"
           />
         </div>
-        <div className="rounded-[5%] bg-gradient-to-r from-green-400 to-blue-500 h-[50vh] flex items-center justify-center text-white font-bold sm:h-[50vh] lg:my-[0vh] md:my-[5vh] ">
+        {/* <div className="rounded-[5%] bg-white h-[50vh] flex items-center justify-center text-white font-bold sm:h-[50vh] lg:my-[0vh] md:my-[5vh] ">
           <img
-            src="https://www.nsbpictures.com/wp-content/uploads/2018/07/butterfly-png-6.png"
+            src="platter.jpg"
             alt=""
             className="p-20 hover:p-[60px] duration-500 "
           />
-        </div>
-        <div className=" rounded-[5%] lg:h-[70vh] bg-gradient-to-r from-yellow-400 to-red-500  flex items-center justify-center text-white font-bold  md:my-[5vh] lg:my-[0vh]">
+        </div> */}
+ <div className="rounded-[5%] bg-white h-[50vh] w-full flex items-center justify-center text-white font-bold sm:h-[50vh] lg:my-[0vh] md:my-[5vh] overflow-hidden">
+  <img
+    src="web.png"
+    alt=""
+    className="w-full h-full object-cover hover:scale-105 duration-500"
+  />
+</div>
+
+
+        <div className=" rounded-[5%] lg:h-[70vh] bg-gradient-to-r from-blue-400 to-red-500  flex items-center justify-center text-white font-bold  md:my-[5vh] lg:my-[0vh]">
           <img
-            src="https://www.nsbpictures.com/wp-content/uploads/2018/07/butterfly-png-6.png"
+            src="mockup.png"
             alt=""
-            className="p-20 hover:p-[60px] duration-500"
+            className="w-full h-full object-cover rounded-[5%] hover:scale-95 duration-500"
           />
         </div>
-        <div className="rounded-[5%] lg:h-[60vh] bg-gradient-to-r from-indigo-500 to-pink-500 flex items-center justify-center text-white font-bold md:my-[5vh] lg:my-[0vh]">
+        <div className="rounded-[5%] lg:h-[60vh] bg-white flex items-center justify-center text-white font-bold md:my-[5vh] lg:my-[0vh] overflow-hidden">
+  <img
+    src="platter.jpg"
+    alt=""
+    className="w-full h-full object-cover rounded-[5%] hover:scale-95 duration-500"
+  />
+</div>
+
+        <div className="rounded-[5%] lg:h-[80vh]   lg:mt-[-20vh] bg-white flex items-center justify-center text-white font-bold sm:h-[50vh] lg:my-[0vh] md:my-[5vh] ">
           <img
-            src="https://www.nsbpictures.com/wp-content/uploads/2018/07/butterfly-png-6.png"
+            src="summer.png"
             alt=""
-            className="p-20 hover:p-[60px] duration-500"
+            className="w-full h-full object-cover rounded-[5%] hover:scale-95 duration-500"
           />
         </div>
-        <div className="rounded-[5%] lg:h-[80vh]   lg:mt-[-20vh] bg-gradient-to-r from-cyan-500 to-blue-600 flex items-center justify-center text-white font-bold sm:h-[50vh] lg:my-[0vh] md:my-[5vh] ">
+        <div className="rounded-[5%] h-[60vh] bg-white flex items-center justify-center text-white font-bold lg:my-[0vh] md:my-[5vh]">
           <img
-            src="https://www.nsbpictures.com/wp-content/uploads/2018/07/butterfly-png-6.png"
+            src="decoders.jpg"
             alt=""
-            className="p-20 hover:p-[60px] duration-500"
-          />
-        </div>
-        <div className="rounded-[5%] h-[60vh] bg-gradient-to-r from-teal-400 to-green-500 flex items-center justify-center text-white font-bold lg:my-[0vh] md:my-[5vh]">
-          <img
-            src="https://www.nsbpictures.com/wp-content/uploads/2018/07/butterfly-png-6.png"
-            alt=""
-            className="p-20 hover:p-[60px] duration-500"
+            className="w-full h-full object-cover rounded-[5%] hover:scale-95 duration-500"
           />
         </div>
       </div>

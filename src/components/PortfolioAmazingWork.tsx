@@ -53,7 +53,7 @@ function PortfolioAmazingWork() {
             className="p-20 hover:p-[60px] duration-500 "
           />
         </div> */}
- <div className="rounded-[5%] bg-white h-[50vh] w-full flex items-center justify-center text-white font-bold sm:h-[50vh] lg:my-[0vh] md:my-[5vh] overflow-hidden">
+ <div className="rounded-[5%] bg-white  w-full flex items-center justify-center text-white font-bold sm:h-[50vh] lg:my-[0vh] md:my-[5vh] overflow-hidden">
   <img
     src="web.png"
     alt=""

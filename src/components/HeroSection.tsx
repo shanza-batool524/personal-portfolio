@@ -13,52 +13,47 @@ type Props = {
 
 function HeroSection({ mainButton, buttonSpan }: Props) {
   return (
-    <div className="flex flex-col-reverse lg:flex-row items-center py-10 px-6 md:px-12 lg:px-24">
-      {/* Left Section */}
-      <div className="lg:w-1/2 flex-1 text-center lg:text-left">
-        <div className="text-orange-500 text-2xl md:text-3xl py-4">
-          Hello I'm <br />
-          <div className="mt-4 text-4xl md:text-5xl lg:text-6xl text-black font-bold">
-            Kainat Batool
-          </div>
-        </div>
-        <div className="py-5 text-lg md:text-xl">
-          <span className="text-green-500">Flutter Developer</span> from <span>Pakistan</span>
-        </div>
-        <div className="text-base md:text-lg text-gray-500">
-          A passionate Flutter Developer dedicated to crafting seamless, high-performance mobile applications.
-        </div>
-
-        {/* Buttons & Social Links */}
-        <div className="py-8 flex flex-col sm:flex-row items-center gap-6 sm:gap-12">
-          {/* <button className={mainButton}>
-            <span className={buttonSpan}></span>
-            <span className="relative z-10 group-hover:text-white duration-75">
-              Download CV
-            </span>
-          </button>   */}
-          <a href="/public/kainat.pdf" download="kainat.pdf" className={mainButton}>
-            <span className={buttonSpan}></span>
-            <span className="relative z-10 group-hover:text-white duration-75">
-              Download CV
-            </span>
-          </a>
-          <div className="flex gap-4 text-xl">
-            <a href="https://github.com/kainat-Batool"><FaGithub /></a>
-            <a href="https://www.linkedin.com/in/kainat-batool-96062424a/"><FaLinkedin /></a>
-            <a href="https://www.fiverr.com/kainatsiddiquei" target="_blank" rel="noopener noreferrer">
-              <img src="/fiverr.png" alt="Fiverr Logo" className="w-5 h-5 object-contain" />
-            </a>
-            {/* <a href="https://www.fiverr.com/kainatsiddiquei"><SiFiverr  className="text-black-500 w-10 h-10"/></a> */}
-            <a href="https://x.com/kainat_siddiqe"><FaXTwitter /></a>
-          </div>
-        </div>
+    <div className="flex flex-col-reverse lg:flex-row items-center py-10 px-6 md:px-12 lg:px-24 mx-[10%] h-[70vh]">
+      <div className="  flex-1 text-center lg:text-left lg:h-[60vh] flex items-center">
+  <div>
+    <div className="text-orange-600 md:text-3xl py-4">
+      Hello I'm <br />
+      <div className="mt-10   md:text-4xl  lg:text-[8vh] text-black ">
+        Kainat Batool
       </div>
+    </div>
+    <div className="py-5 text-lg md:text-xl lg:text-4xl ">
+      <span className="text-green-500 "><span className="text-black ">A </span>Flutter Developer</span> from <span className="text-purple-500">Pakistan</span>
+    </div>
+    <div className="text-base lg:text-2xl md:text-lg  ">
+      A passionate Flutter Developer dedicated to crafting seamless, <br />high-performance mobile applications.
+    </div>
 
-      {/* Right Section */}
-      <div className="relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:w-1/2 flex justify-center">
+    <div className="py-8 flex flex-col sm:flex-row items-center gap-6 sm:gap-12">
+      <button className={`${mainButton} lg:w-[30%] h-[5vh] rounded-[30px]`}>
+        <a href="/public/kainat.pdf" download="kainat.pdf">
+          <span className={buttonSpan}></span>
+          <span className="relative z-10 group-hover:text-white duration-75">
+            Download CV
+          </span>
+        </a>
+      </button>
+      <div className="flex gap-4 text-xl">
+        <a href="https://github.com/kainat-Batool"><FaGithub /></a>
+        <a href="https://www.linkedin.com/in/kainat-batool-96062424a/"><FaLinkedin /></a>
+        <a href="https://www.fiverr.com/kainatsiddiquei" target="_blank" rel="noopener noreferrer">
+          <img src="/fiverr.png" alt="Fiverr Logo" className="w-5 h-5 object-contain" />
+        </a>
+        <a href="https://x.com/kainat_siddiqe"><FaXTwitter /></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      <div className="relative flex-1 max-w-xs  lg:w-[120%] sm:max-w-sm md:max-w-md  flex justify-center  lg:h-[60vh]  ">
         <img
-          className="w-full max-w-[280px] sm:max-w-[320px] md:max-w-[400px]"
+          className="w-full max-w-[280px] sm:max-w-[320px] md:max-w-[100vw] h-[100%]"
           src="/kainatt.png"
           alt="Kainat Batool"
         />

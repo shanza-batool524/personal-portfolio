@@ -76,19 +76,8 @@ function App() {
             </div>
           </div>
 
-          {/* <button
-            className={tailwindCss.mainButton}
-            onClick={() => {
-              // Scroll to the Services component using ref
-              servicesRef.current.scrollIntoView({
-                behavior: "smooth",
-              });
-            }}
-          >
-            View Services
-          </button> */}
+        
 
-          {/* Other sections */}
           <div className="pt-[10%]">
             <SecondSection />
           </div>

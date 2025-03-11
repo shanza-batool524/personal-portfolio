@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
 import SecondSection from "./components/SecondSection";
@@ -14,15 +14,20 @@ import GridTable from "./components/Table";
 import FormWebsite from "./components/FormWebsite";
 import GoogleMapComponent from "./components/GoogleMap";
 import Preloader from "./preloader/Preloader";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 function App() {
   const [loading, setLoading] = useState(true);
   const [isScrolling, setIsScrolling] = useState(false);
+  const servicesRef = useRef(null);  // Create a ref for the Services component
+
   const tailwindCss = {
     mainButton:
       "relative overflow-hidden bg-white text-orange-600 border-2 border-orange-600 px-6 py-2 rounded-[25px] transition-all duration-500 group",
     buttonSpan:
       "absolute inset-x-0 bottom-0 h-0 bg-orange-600 transition-all duration-500 group-hover:h-full",
   };
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 1) {
@@ -44,17 +49,17 @@ function App() {
     <>
       {loading ? (
         <div className="bg-black">
-        <Preloader setLoading={setLoading} />
-
+          <Preloader setLoading={setLoading} />
         </div>
       ) : (
-        <>
-          <div className="h-screen bg-no-repeat bg-cover  ">
-            <div className="relative bg-[url('https://img.freepik.com/premium-photo/colorful-feather-with-white-background_354831-1943.jpg')] bg-cover bg-center bg-no-repeat">
-              {/* Light Overlay */}
-              <div className="absolute inset-0 bg-white bg-opacity-70"></div>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/services" element={<Services />} />
+          </Routes>
 
-              {/* Content */}
+          <div className="h-screen bg-no-repeat bg-cover">
+            <div className="relative bg-[url('https://img.freepik.com/premium-photo/colorful-feather-with-white-background_354831-1943.jpg')] bg-cover bg-center bg-no-repeat">
+              <div className="absolute inset-0 bg-white bg-opacity-70"></div>
               <div className="relative">
                 <Navbar
                   mainButton={tailwindCss.mainButton}
@@ -69,14 +74,28 @@ function App() {
                 </div>
               </div>
             </div>
-
-            
           </div>
+
+          {/* <button
+            className={tailwindCss.mainButton}
+            onClick={() => {
+              // Scroll to the Services component using ref
+              servicesRef.current.scrollIntoView({
+                behavior: "smooth",
+              });
+            }}
+          >
+            View Services
+          </button> */}
+
+          {/* Other sections */}
           <div className="pt-[10%]">
-              <SecondSection />
-            </div>
+            <SecondSection />
+          </div>
           <div className="mt-[10%]">
             <ThirdSection
+                    servicesRef={servicesRef} // Pass the ref to ThirdSection
+
               mainButton={tailwindCss.mainButton}
               buttonSpan={tailwindCss.buttonSpan}
             />
@@ -85,7 +104,12 @@ function App() {
             <PortfolioAmazingWork />
           </div>
           <DesignOfLife />
-          <Services />
+
+          {/* Services section with the ref */}
+          <div ref={servicesRef}>
+            <Services />
+          </div>
+
           <Testimonial />
           <SimpleSlider />
           <div className="my-14">
@@ -93,7 +117,6 @@ function App() {
             <div className="my-[3vh]">
               {/* <Blogs /> */}
             </div>
-            {/* <EmailSending /> */}
           </div>
           <div className="my-[5vh] ">
             <FormWebsite
@@ -102,7 +125,7 @@ function App() {
             />
           </div>
           <GoogleMapComponent />
-        </>
+        </BrowserRouter>
       )}
     </>
   );

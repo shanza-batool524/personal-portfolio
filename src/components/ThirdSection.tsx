@@ -12,8 +12,8 @@ function ThirdSection({ mainButton, buttonSpan, servicesRef }: Props) {
       <div className="relative w-full lg:w-1/2 flex justify-center">
         <img
           className="w-full max-w-sm md:max-w-md lg:max-w-lg h-auto rounded-xl"
-          src="second.png"
-          alt="Shanza Batoool"
+          src="conference.png"
+          alt="Kainat Batoool"
         />
       </div>
 

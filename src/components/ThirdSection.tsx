@@ -21,7 +21,7 @@ function ThirdSection({ mainButton, buttonSpan, servicesRef }: Props) {
           className="absolute bottom-2 left-[50%] md:left-[60%] transform -translate-x-1/2"
         >
           <div className="flex items-center justify-center gap-4 bg-white p-4 w-40 md:w-48 lg:w-56 h-24 rounded-xl shadow-lg">
-            <div className="text-4xl md:text-5xl text-purple-600">8+</div>
+            <div className="text-4xl md:text-5xl text-purple-600">15+</div>
             <div className="text-lg md:text-xl">Total Projects</div>
           </div>
         </motion.div>

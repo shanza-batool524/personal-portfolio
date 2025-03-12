@@ -8,7 +8,7 @@ function Services() {
     {
       picture: "/mockup/1A.png",
       name: "Native App",
-      price: "$800",
+      price: "",
       modalPicture: ["/mockup/1.png", "/mockup/1A.png", "/mockup/1B.png"],
       description:
         "A user-friendly e-commerce app designed to provide a seamless online shopping experience. The app allows users to effortlessly browse, search, and purchase products while ensuring secure payment integration for a smooth checkout process. ",
@@ -16,21 +16,21 @@ function Services() {
     {
       picture: "/mockup/2.png",
       name: "Learning Management System",
-      price: "$149",
+      price: "",
       description:
         "A versatile LMS application designed to streamline learning and collaboration. It supports structured course management for different semesters, enabling students and teachers to manage assignments efficiently with submission and tracking features. ",
     },
     {
       picture: "/mockup/3.png",
       name: "Bina'a App",
-      price: "$79",
+      price: "",
       description:
         "A smart home management app designed to simplify household maintenance and service bookings. Whether it's a blocked drain, electrical issues, or the need for a plumber, painter, or electrician, users can find and book professional service providers directly through the app. ",
     },
     {
       picture: "/mockup/4.png",
       name: "Attendance App",
-      price: "$129",
+      price: "",
       description:
         "A comprehensive attendance tracking system designed for efficient workforce management. The app features three types of admins with varying access levels, allowing them to monitor and edit attendance records as needed. It enables project-based workforce planning, helping users determine the required number of employees for specific tasks, such as road construction. ",
     },
@@ -42,28 +42,28 @@ function Services() {
       Description:
         "A user-friendly e-commerce app designed to provide a seamless online shopping experience. The app allows users to effortlessly browse, search, and purchase products while ensuring secure payment integration for a smooth checkout process",
       name: "Native App",
-      price: "$800",
+      price: "",
     },
     {
       picture: ["/mockup/2.png", "/mockup/2A.png", "/mockup/2A.png"],
       Description:
         "A versatile LMS application designed to streamline learning and collaboration. It supports structured course management for different semesters, enabling students and teachers to manage assignments efficiently with submission and tracking features.",
       name: "Learning Management System",
-      price: "$149",
+      price: "",
     },
     {
       picture: ["/mockup/3.png", "/mockup/3A.png", "/mockup/3B.png"],
       Description:
         "A smart home management app designed to simplify household maintenance and service bookings. Whether it's a blocked drain, electrical issues, or the need for a plumber, painter, or electrician, users can find and book professional service providers directly through the app.",
       name: "Bina'a App",
-      price: "$79",
+      price: "",
     },
     {
       picture: ["/mockup/4.png", "/mockup/4B.png", "/mockup/4C.png"],
       Description:
         "A comprehensive attendance tracking system designed for efficient workforce management. The app features three types of admins with varying access levels, allowing them to monitor and edit attendance records as needed. It enables project-based workforce planning, helping users determine the required number of employees for specific tasks, such as road construction.",
       name: "Attendance App",
-      price: "$129",
+      price: "",
     },
   ];
 

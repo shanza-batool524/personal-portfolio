@@ -37,8 +37,8 @@ const Testimonial = () => {
         <h1 className="text-2xl text-orange-600">Testimonials</h1>
         <h1 className="text-5xl my-4">What My Clients Say</h1>
         <h1 className="text-gray-500 text-medium my-10">
-          Most common methods for designing websites that work well on desktop is <br />
-          responsive and adaptive design
+        Feedback from satisfied clients! I take pride in delivering high-quality solutions, whether it's app <br />
+        development, website creation, or social media management. Your success is my priority! 
         </h1>
       </div>
 
